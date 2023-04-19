@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
-import theme from "./theme";
-const Stat = ({ text, count }) => {
+import theme from "../theme";
+const Stat = ({ text, count, testID }) => {
   const styles = StyleSheet.create({
     count: {
       fontWeight: theme.fontWeights.bold,
@@ -12,7 +12,7 @@ const Stat = ({ text, count }) => {
     },
   });
   return (
-    <View>
+    <View testID={testID}>
       <Text style={styles.count}>{count}</Text>
       <Text style={styles.text}>{text}</Text>
     </View>

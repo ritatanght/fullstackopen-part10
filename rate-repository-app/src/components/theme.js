@@ -8,6 +8,7 @@ const theme = {
   colors: {
     desc: "grey",
     error: "#d73a4a",
+    default: "black",
   },
   fontSizes: {
     body: 14,
